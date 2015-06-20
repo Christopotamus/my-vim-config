@@ -11,19 +11,26 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'sukima/xmledit'
 Plugin 'othree/xml.vim'
 Plugin 'vim-ruby/vim-ruby'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-colorscheme railscasts
+"colorscheme railscasts
+syntax enable
+set background=dark
+colorscheme solarized
+
 set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
+set number
 syntax on
 
 
