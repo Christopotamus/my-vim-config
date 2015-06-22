@@ -11,7 +11,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'sukima/xmledit'
 Plugin 'othree/xml.vim'
 Plugin 'vim-ruby/vim-ruby'
@@ -20,17 +21,17 @@ Plugin 'vim-ruby/vim-ruby'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"colorscheme railscasts
-syntax enable
-set background=dark
-colorscheme solarized
+set number
+"syntax enable
+set background=light
+""colorscheme solarized
+colorscheme railscasts
 
 set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set backspace=indent,eol,start
-set number
 syntax on
 
-
+let g:solarized_termcolors=16
